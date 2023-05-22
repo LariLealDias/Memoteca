@@ -21,79 +21,14 @@
       id="autoria"
       name="autoria"
       placeholder="Digite a autoria ou fonte"
-      [value]="pensamento.autoria"
+      [(ngModel)]="pensamento.autoria"
     >
 
-    <label for="modelo">Selecione o modelo do card:</label>
-    <div class="container-radio">
-      <div class="radio-modelo">
-          <label for="modelo1">
-            <input
-              type="radio"
-              id="modelo1"
-              value="modelo1"
-              name="modelo-card"
-            >
-            <div class="custom-radio">
-              <span></span>
-            </div>
-            <span>Modelo 1</span>
-          </label>
-          Prévia:
-          <div class="modelo modelo1 ff-roboto-mono">
-            <img src="../../../../assets/Imagens do curso/modelo1.png" alt="Aspas azuis">
-            <!-- <p class="conteudo">Aqui vai o conteúdo</p> -->
-            <p class="conteudo">{{ pensamento.conteudo }}</p>
-            <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
-          </div>
-      </div>
-    </div>
-
-    <div class="radio-modelo">
-      <label for="modelo2">
-        <input
-          type="radio"
-          id="modelo2"
-          value="modelo2"
-          name="modelo-card"
-        >
-        <div class="custom-radio">
-          <span></span>
-        </div>
-        <span>Modelo 2</span>
-      </label>
-      Prévia:
-      <div class="modelo modelo2 ff-roboto-mono">
-        <img src="../../../../assets/Imagens do curso/modelo2.png" alt="Aspas azul claro">
-        <p class="conteudo">Aqui vai o conteúdo</p>
-        <p class="autoria"><b>Aqui vai a autoria</b></p>
-      </div>
-    </div>
-
-    <div class="radio-modelo">
-      <label for="modelo3">
-        <input
-          type="radio"
-          id="modelo3"
-          value="modelo3"
-          name="modelo-card"
-        >
-        <div class="custom-radio">
-          <span></span>
-        </div>
-        <span>Modelo 3</span>
-      </label>
-      Prévia:
-      <div class="modelo modelo3 ff-roboto-mono">
-        <img src="../../../../assets/Imagens do curso/modelo3.png" alt="Aspas azul claro">
-        <p class="conteudo">Aqui vai o conteúdo</p>
-        <p class="autoria"><b>Aqui vai a autoria</b></p>
-      </div>
-    </div>
+    <app-modelos-pensamentos [pensamento]="pensamento"></app-modelos-pensamentos>
 
     <div class="acoes">
       <button (click)="criarPensamento()" class="botao">Salvar</button>
-      <button routerLink="/listarPensamento" (click)="cancelar()" class="botao">Cancelar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
 
   </form>

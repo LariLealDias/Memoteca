@@ -1,12 +1,10 @@
 .cabecalho {
-    /* background: url(/assets/imagens/fundo-cabecalho.png); */
-    /* background-size: cover; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-background-color: blue;
-
+    background-color: #34154b;
   }
+
 
   .cabecalho .logo {
     width: 46%;
@@ -20,7 +18,9 @@ background-color: blue;
   }
 
   .cabecalho .imagem{
-    width: 40%;
+    width: 10%;
+    margin-right: 270px;
+    opacity: 0.8;
   }
 
   .cabecalho p {

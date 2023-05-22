@@ -1,7 +1,7 @@
 footer {
   /* background-image: url(/assets/imagens/fundo-rodape.png); */
   /* background-image: url(/src/assets/Imagens\ do\ curso/fundo-rodape.png); */
-background-color: blue;
+background-color: #34154b;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -21,6 +21,16 @@ background-color: blue;
   justify-self: center;
   grid-area: LogoRodape;
 }
+.linkedin{
+  width: 30px;
+  height: 30px;
+}
+.github{
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
+
 
 footer small {
   color: white;
