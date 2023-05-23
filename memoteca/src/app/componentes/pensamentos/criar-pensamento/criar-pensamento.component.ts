@@ -13,7 +13,7 @@ export class CriarPensamentoComponent implements OnInit {
   pensamento : Pensamento = {
     conteudo : '',
     autoria : '',
-    modelo : 'modelo1'
+    modelo : ''
   }
   constructor(private service: PensamentoService,
               private router: Router
@@ -22,9 +22,11 @@ export class CriarPensamentoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   criarPensamento(){
     this.service.criar(this.pensamento).subscribe(()=>{
       this.router.navigate(['/listarPensamento']);
+      console.log(this.pensamento.modelo + " <---AAA");
     });
   }
   cancelar(){
