@@ -21,6 +21,8 @@ também é possivel descartar notas e editar as notas.
 <br>
 #### Descrição técnica
 - Este projeto contém manipulações em CRUD, onde é possivel criar, listar, alterar e excluir notas do objeto Pensamento
+- Para que os componentes tenham as funções de requisições é necessário passar pela camada service e isto é 
+feito pela injeção de dependência nos constructors de cada class responsável por um component 
 - O conteúdo dos cards são armazenados em Json (Json Serve)
 - Conceitos do Angular que foram colocados em práticas: 
   -  NgFor, *NGIf, NgClass
